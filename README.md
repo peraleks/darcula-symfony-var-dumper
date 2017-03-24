@@ -15,7 +15,7 @@ composer require peraleks/darcula-symfony-var-dumper
 
 ## Использование
 ```php
-include 'vendor/peraleks/darcula-symfony-var-dumper/dumper.inc';
+include 'vendor/peraleks/darcula-symfony-var-dumper/src/dumper.inc';
 dp($_SERVER);
 ```
 ## Лицензия
