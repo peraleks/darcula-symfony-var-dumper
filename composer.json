@@ -1,0 +1,26 @@
+{
+    "name": "peraleks/darcula-symfony-var-dumper",
+    "type": "library",
+    "description": "Symfony/var-dumper wrapper providing 'Darcula' theme",
+    "keywords": ["peraleks", "var-dumper", "symfony", "darcula", "debug",  "php"
+    ],
+    "homepage": "https://github.com/peraleks/darcula-symfony-var-dumper",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Aleksey Perevoshchikov",
+            "email": "aleksey.perevoshchikov.n@gmail.com",
+            "homepage": "https://github.com/peraleks",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php" : "^7.0",
+        "symfony/var-dumper": "^3.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Peraleks\\VarDumper\\": "src"
+        }
+    }
+}
