@@ -29,6 +29,7 @@ class DarculaHtmlDumper extends HtmlDumper
                     box-sizing: border-box;
                     min-width: 100%;
                     padding: 5px;
+                    margin: 5px 0 0 0;
                     border-top: 1px solid #666;
                     font-size: 13px;
                     font-family: Consolas, Menlo, Monaco, monospace;',

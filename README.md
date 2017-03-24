@@ -5,10 +5,13 @@
 * Добавлен показ порядкового номера вызова функции дампа. 
 * Добавлен показ файла и номера строки где вызвана функция дампа.
 
+
+
 ## Установка
 ```bush
 composer require peraleks/darcula-symfony-var-dumper
 ```
+Для использования без composer доступен [fork](https://github.com/peraleks/var-dumper).
 
 ## Использование
 ```php
