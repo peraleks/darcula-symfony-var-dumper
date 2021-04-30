@@ -20,8 +20,16 @@ if (! function_exists('dp')) {
     {
 //        if (!defined('DEVELOPMENT_MODE') || DEVELOPMENT_MODE === false) return;
         VarDumper::setHandler(function ($var) {
+            $cloner = new VarCloner();
+
+            $maxItems = getenv('VAR_DUMPER_MAX_ITEMS');
+            if ($maxItems)
+            {
+                $cloner->setMaxItems($maxItems);
+            }
+
             $dumper = 'cli' === PHP_SAPI ? new CliDumper : new Dumper;
-            $dumper->dump((new VarCloner)->cloneVar($var));
+            $dumper->dump($cloner->cloneVar($var));
         });
 
         static $int = 1;
